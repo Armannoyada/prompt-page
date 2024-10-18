@@ -8,13 +8,13 @@ from PIL import Image
 
 # Load models for each plant
 models = {
-    "Potato": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\trained_plant_disease_model.h5'),
-    "Tomato": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\tomato1.h5'),
-    "Rice": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\rice2.h5'),
-    "Wheat": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\wheat1.h5'),
-    "Apple": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\apple.h5'),
-    "Corn": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\corn.h5'),
-    "sugar_cane": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\sugarcane.h5')
+    "Potato": tf.keras.models.load_model('trained_plant_disease_model.h5'),
+    #"Tomato": tf.keras.models.load_model(r'C:\Users\arman\Desktop\project roll no. 19\plantai\project_root\models\tomato1.h5'),
+    "Rice": tf.keras.models.load_model('rice2.h5'),
+    "Wheat": tf.keras.models.load_model('wheat1.h5'),
+    "Apple": tf.keras.models.load_model('apple.h5'),
+    "Corn": tf.keras.models.load_model('corn.h5'),
+    "sugar_cane": tf.keras.models.load_model('sugarcane.h5')
 }
 
 # Define diseases and cures for each plant
