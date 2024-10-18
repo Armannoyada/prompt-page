@@ -65,7 +65,7 @@ def home_page():
     cols = st.columns(3)
     for idx, plant in enumerate(PLANTS):
         with cols[idx % 3]:
-            st.image(f"{plant.lower()}.jpg", width=300)
+            st.image(f"{/plant.lower()}.jpg", width=300)
             if st.button(f"Detect {plant} Diseases"):
                 st.session_state.page = "Plant Detection"
                 st.session_state.selected_plant = plant
