@@ -25,7 +25,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 col1, col2, col3 = st.columns([4, 4, 1])
 
 with col2:
-    st.image("ai_logo-removebg-preview.png", width=100)
+    st.image("static/images/ai_logo-removebg-preview.png", width=100)
     
 
 # Function to simulate word-by-word text generation
@@ -65,7 +65,7 @@ def home_page():
     cols = st.columns(3)
     for idx, plant in enumerate(PLANTS):
         with cols[idx % 3]:
-            st.image(f"{/plant.lower()}.jpg", width=300)
+            st.image(f"{static/images/plant.lower()}.jpg", width=300)
             if st.button(f"Detect {plant} Diseases"):
                 st.session_state.page = "Plant Detection"
                 st.session_state.selected_plant = plant
